@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
            <div class="col-sm-12">
-               <h1 class="page-header text-center">Cuentas de Sitios y Apps</h1>
+               <h1 class="page-header text-center">Cuentas</h1>
            </div>
 
             @yield('content')
