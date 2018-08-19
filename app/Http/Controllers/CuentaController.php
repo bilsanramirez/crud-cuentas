@@ -23,7 +23,7 @@ class CuentaController extends Controller
     public  function edit($id){
 
         $cuenta = Cuenta::find($id);
-        return view('cuentas.edit', compact($cuenta));
+        return view('cuentas.edit', compact('cuenta'));
     }
 
     public function show($id){

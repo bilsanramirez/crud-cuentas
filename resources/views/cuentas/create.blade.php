@@ -5,7 +5,11 @@
             Nueva cuenta
             <a href="{{ route('cuentas.index') }}" class="btn btn-light float-right">Listado</a>
         </h2>
-        formulario
+        {!! Form::open(['route'=>['cuentas.store']]) !!}
+
+        @include('cuentas.fragment.form')
+
+        {!! Form::close() !!}
     </div>
     <div class="col-sm-4">
         @include('cuentas.fragment.aside')

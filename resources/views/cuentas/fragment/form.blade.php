@@ -1,7 +1,15 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Bilsan
- * Date: 17/8/2018
- * Time: 11:37
- */
+<div class="form-group">
+    {!! Form::label('nombre', 'Nombre de la cuenta') !!}
+    {!! Form::text('nombre', null, ['class'=>'form-control']) !!}
+</div>
+<div class="form-group">
+    {!! Form::label('usuario', 'Usuario') !!}
+    {!! Form::text('usuario', null, ['class'=>'form-control']) !!}
+</div>
+<div class="form-group">
+    {!! Form::label('clave', 'Clave') !!}
+    {!! Form::text('clave', null, ['class'=>'form-control']) !!}
+</div>
+<div class="form-group">
+    {!! Form::submit('Enviar', ['class'=>'btn btn-primary']) !!}
+</div>

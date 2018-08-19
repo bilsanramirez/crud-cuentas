@@ -5,7 +5,11 @@
             Editar cuenta
             <a href="{{ route('cuentas.index') }}" class="btn btn-default float-right">Listado</a>
         </h2>
-        formulario
+        {!! Form::model($cuenta, ['route'=>['cuentas.update', $cuenta->id], 'method'=>'PUT']) !!}
+
+            @include('cuentas.fragment.form')
+
+        {!! Form::close() !!}
     </div>
     <div class="col-sm-4">
         @include('cuentas.fragment.aside')

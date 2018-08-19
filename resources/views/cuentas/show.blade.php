@@ -1,6 +1,10 @@
 @extends('../layout/layout')
 @section('content')
     <div class="col-sm-8">
+        <h2>
+            Detalle cuenta
+            <a href="{{ route('cuentas.index') }}" class="btn btn-light float-right">Listado</a>
+        </h2>
         <ul class="list-group">
             <li class="list-group-item">
                 <strong>Nombre: </strong>{{ $cuenta->nombre }}
