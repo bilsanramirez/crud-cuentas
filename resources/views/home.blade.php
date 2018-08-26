@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <a href="{{route('cuentas.index')}}">Cuentas</a>
                 </div>
             </div>
         </div>
