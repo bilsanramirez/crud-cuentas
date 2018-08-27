@@ -14,11 +14,11 @@
                         <th width="20px">Id</th>
                         <th>Nombre</th>
                         <th>Usuario</th>
-                        <th colspan="3">&nbsp;</th>
+                        <th colspan="3">Acciones</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($cuentas as $cuenta)
+                    @forelse($cuentas as $cuenta)
                         <tr>
                             <td>{{ $cuenta->id }}</td>
                             <td>{{ $cuenta->nombre }}</td>
@@ -37,7 +37,11 @@
                                 </form>
                             </td>
                         </tr>
-                    @endforeach
+                        @empty
+                        <tr>
+                            <td colspan="5">No hay registros!!</td>
+                        </tr>
+                    @endforelse
                     </tbody>
                 </table>
                 {{ $cuentas->render() }}
